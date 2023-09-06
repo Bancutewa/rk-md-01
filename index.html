@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form and Table</title>
+  </head>
+  <body>
+    <header>
+      <h1>Session 02 - HTML Form and Table - 30.08.2023</h1>
+    </header>
+    <main>
+      <section>
+        <h3>Ví dụ về thẻ form</h3>
+
+        <form action="" id="my-form" class="form">
+          <p>Ví dụ về input và label</p>
+          <label for="username">First name</label>
+          <input type="text" value="hello lớp" id="username" />
+          <i>label -> thuộc tính for của label trùng id của input</i>
+        </form>
+
+        <article>
+          <h3>Ví dụ về type password</h3>
+          <form action="" class="form">
+            <label for="password">Password</label>
+            <input type="password" value="hello lớp" id="password" />
+          </form>
+        </article>
+
+        <article>
+          <h3>Ví dụ về type radio</h3>
+          <form action="" class="form">
+            <label for="radio-1">Gender</label>
+            <input type="radio" value="male" id="radio-1" name="gender" /><label
+              for="radio-1"
+              >Male</label
+            >
+            <input
+              type="radio"
+              value="female"
+              id="radio-2"
+              name="gender"
+              checked
+            /><label for="radio-2">Female</label>
+            <!-- type submit -> gửi submit form -->
+            <input type="submit" value="Gửi" />
+            <!-- button submit -> gửi submit form -->
+            <button>Submit</button>
+            <i>Thẻ radio -> những input lựa chọn sẽ cùng thuộc tính name</i>
+          </form>
+        </article>
+
+        <article>
+          <h3>Ví dụ về type checkbox</h3>
+          <form action="" class="form">
+            <label for="radio-1">Gender</label>
+            <input type="checkbox" id="checkbox-1" name="swim" />
+            <label for="checkbox-1">Thích bơi lội</label>
+            <input type="checkbox" id="checkbox-2" name="game" /><label
+              for="checkbox-2"
+              >Thích chơi game</label
+            >
+            <!-- type submit -> gửi submit form -->
+            <input type="submit" value="Gửi" disabled />
+            <!-- button submit -> gửi submit form -->
+            <button>Submit</button>
+          </form>
+        </article>
+
+        <article>
+          <h3>Ví dụ về type checkbox</h3>
+          <form action="" class="form">
+            <input type="number" name="" id="" min="0" max="10" />
+          </form>
+        </article>
+
+        <article>
+          <h3>Ví dụ về select - option và textarea</h3>
+          <form action="" class="form">
+            <select name="course" id="">
+              <option>--Course--</option>
+              <option value="course_001">HTML</option>
+              <option>CSS</option>
+              <option>Javascript</option>
+            </select>
+            <br />
+
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <br />
+            <input type="submit" value="Gửi" />
+          </form>
+        </article>
+      </section>
+
+      <section>
+        <h3>Làm việc với table</h3>
+        <p>table bao gồm tr - dòng, td/th - cột</p>
+        <table border="5" cellpadding="10">
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Samsung</td>
+              <td>$1000</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr bgcolor="red">
+              <th>STT</th>
+              <th>Sảm phẩm</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tfoot></tfoot>
+          <caption>
+            Danh sách sản phẩm
+          </caption>
+        </table>
+
+        <table border="5" cellpadding="10">
+          <tr>
+            <td colspan="3">1.1 - 1.2 - 1.3</td>
+
+            <td>1.4</td>
+            <td>1.5</td>
+            <td>1.6</td>
+          </tr>
+          <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+            <td>2.4</td>
+            <td>2.5</td>
+            <td>2.6</td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              3.1 <br />
+              4.1
+            </td>
+            <td>3.2</td>
+            <td>3.3</td>
+            <td>3.4</td>
+            <td>3.5</td>
+            <td>3.6</td>
+          </tr>
+          <tr>
+            <td>4.2</td>
+            <td colspan="3" rowspan="2">
+              4.3 - 4.4 - 4.5 <br />
+              5.3 - 5.4 - 5.5
+            </td>
+
+            <td>4.6</td>
+          </tr>
+          <tr>
+            <td>5.1</td>
+            <td>5.2</td>
+
+            <td>5.6</td>
+          </tr>
+          
+        </table>
+      </section>
+      <section>
+        <h3>Bài tập nhỏ</h3>
+        <button>
+          <a href="./class/form-register.html">Bài tập 1 - Form</a>
+        </button>
+        <button>
+          <a href="./class/table-lab-1.html" target="_blank">Bài tập 2 - Table</a>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

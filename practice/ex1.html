@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex1</title>
+  </head>
+  <body>
+    <h1>Order Form</h1>
+    <form action="get">
+      <p><b>What would you like to buy?</b></p>
+      <select name="cost">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="JS">JS</option>
+      </select>
+
+      <p><b>How many would you like to order?</b></p>
+      <input type="radio" name="cd" /> <label for="cd">1-$10</label> <br />
+      <input type="radio" name="cd" /> <label for="cd">2-$20</label> <br />
+      <input type="radio" name="cd" /> <label for="cd">3-$25</label> <br />
+
+      <p><b>Name</b></p>
+      <input type="text" value="FirstName" name="nameUser" />
+      <input type="text" value="LastName" name="nameUser" />
+
+      <p><b>Email</b></p>
+      <textarea id="email" name="email" id="" cols="30" rows="1"></textarea>
+
+      <p><b>Phone Number</b></p>
+      <input type="text" name="phone1" size="5" /> -
+      <input type="text" name="phone2" size="5" /> -
+      <input type="text" name="phone3" size="5" /><br />
+      <br />
+
+      <form method="get" action="https://www.google.com.vn/search?">
+        <input type="text" />
+        <input type="submit" value="Tìm kiếm" />
+      </form>
+    </form>
+  </body>
+</html>
