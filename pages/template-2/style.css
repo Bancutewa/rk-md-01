@@ -1,0 +1,24 @@
+main {
+  background-color: #fff;
+}
+
+.item-image img {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid rgb(226, 220, 220);
+}
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid rgb(110, 108, 108);
+}
+.item-content {
+  text-align: center;
+}
+.item-content h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}

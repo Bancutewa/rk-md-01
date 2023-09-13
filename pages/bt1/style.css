@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+#left-menu {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+#left-menu img {
+    width: 90%;
+    border-radius: 20px;
+}
+#left-menu > * {
+    padding: 20px;
+}
+
+#right-menu {
+    display: inline-block;
+    width: 59%;
+
+    padding: 20px;
+    vertical-align: top;
+}
+#right-menu section {
+    height: 23%;
+    margin-top: 7%;
+}
+#right-menu img {
+    display: inline-block;
+    padding-top: 10px;
+    width: 120px;
+}
+#right-menu .content {
+    display: inline-block;
+    vertical-align: top;
+}
+.banner {
+    background-color: rgb(52, 160, 206);
+    width: 200px;
+}

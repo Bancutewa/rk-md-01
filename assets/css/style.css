@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* general CSS */
+
+img {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 8px 15px;
+  border: none;
+  background-color: rgb(68, 127, 183);
+}
+.card {
+  width: 23%;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.card img {
+  height: 160px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 10px;
+}
+.card-content > * {
+  margin-bottom: 10px;
+}
+
+/* navbar */
+.navbar {
+  background-color: black;
+  color: white;
+}
+.navbar * {
+  display: inline-block;
+  vertical-align: middle;
+
+  /* căn theo chiều dọc */
+}
+
+.logo {
+  width: 60px;
+}
+.block-center {
+  width: 55%;
+  height: 100%;
+}
+
+.navbar-menu {
+  max-width: 70%;
+  text-align: right;
+  padding: 20px;
+  height: 100%;
+}
+.navbar-menu > li {
+  padding: 0 10px;
+}
+.navbar-menu i {
+  color: rgb(68, 127, 183);
+}
+
+/* main css */
+main {
+  padding: 20px 50px;
+  background-color: #444444;
+}
+.image-top img {
+  height: 150px;
+  object-fit: cover;
+}
+.image-top {
+  margin-bottom: 30px;
+}
+
+.album .card {
+  margin-right: 2%;
+}
+.album .card:last-child {
+  margin-right: 0;
+}
