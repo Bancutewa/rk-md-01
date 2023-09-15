@@ -1,0 +1,59 @@
+body {
+  background-color: orange;
+}
+
+/* general  CSS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: green;
+  }
+}
+
+.tablets,
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .tablets {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tablets {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+/* Album CSS */
+
+#album {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  gap: 20px;
+}
+
+

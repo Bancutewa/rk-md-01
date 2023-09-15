@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#album {
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr;
+  /* gap: 20px; */
+  row-gap: 30px;
+  column-gap: 10px;
+}
+#album > * {
+  border: 1px solid red;
+}
+
+#container-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+}
+
+#container-box > * {
+  border: 1px solid green;
+}
+
+/* Grid layout - cả chiều ngang và dọc */
+
+#grid-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header "
+    "nav nav nav nav nav nav "
+    "aside-left section section section section aside-right "
+    "footer footer footer footer footer footer ";
+  margin-bottom: 100px;
+  gap: 10px;
+}
+
+#grid-layout header {
+  grid-area: header;
+  background-color: orange;
+}
+#grid-layout nav {
+  grid-area: nav;
+  background-color: rebeccapurple;
+}
+
+#grid-layout #aside-left {
+  grid-area: aside-left;
+  background-color: green;
+}
+
+#grid-layout #aside-right {
+  grid-area: aside-right;
+  background-color: gray;
+}
+
+#grid-layout section {
+  grid-area: section;
+  background-color: blue;
+}
+#grid-layout footer {
+  grid-area: footer;
+  background-color: gold;
+}

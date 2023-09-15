@@ -1,0 +1,11 @@
+#album {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 1200px) {
+  #album {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

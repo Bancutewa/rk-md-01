@@ -1,0 +1,13 @@
+.nav-contact {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-contact {
+    display: flex;
+    flex-direction: column;
+}

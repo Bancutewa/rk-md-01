@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  padding: 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+/* css box */
+.box {
+  width: 500px;
+  height: 100px;
+  background-color: red;
+  float: left;
+}
+.clear-float {
+  clear: both;
+}
