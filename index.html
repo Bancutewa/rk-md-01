@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/icon.ico"
+      type="image/x-icon"
+    />
+    <title>Truyện Tranh LH</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-left">
+            <div class="nav-logo">
+              <img src="./assets/images/logo/icon.ico" alt="logo" />
+              <p>TruyentranhLH</p>
+            </div>
+            <ul class="nav-category">
+              <li>
+                <i class="icons"><i class="fa-solid fa-book"></i></i>
+                <span>Thể loại</span>
+              </li>
+              <li>
+                <i class="icons"><i class="fa-solid fa-crown"></i></i>
+                <span>BXH</span>
+              </li>
+              <li>
+                <i class="icons"><i class="fa-solid fa-clock"></i></i>
+                <span>Lịch sử</span>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <ul class="nav-user">
+              <li class="search">
+                <input type="text" placeholder="Tìm kiếm" />
+              </li>
+
+              <a href="./pages/auth/login/index.html"
+                ><li class="login">
+                  <i class="icons"
+                    ><i class="fa-solid fa-right-to-bracket"></i
+                  ></i>
+                  <span>login</span>
+                </li></a
+              >
+              <a href="./pages/auth/login/index.html">
+                <li class="register">
+                  <i class="icons"><i class="fa-solid fa-registered"></i></i>
+                  <span>register</span>
+                </li></a
+              >
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hot-search">
+        <div class="container">
+          <div class="hot-search-title">
+            <i class="icons fa-solid fa-fire"></i>
+            <span>Truyện hot trong ngày</span>
+          </div>
+          <div class="hot-search-body">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/images/manga/gantz.jpg"
+                  alt="manga"
+                  class="img"
+                />
+                <div class="time-update">
+                  <span>6 giờ</span>
+                </div>
+                <div class="chapter">
+                  <p>Chapter 46</p>
+                </div>
+              </div>
+              <p class="manga">Gantz</p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <a href="./pages/customer/product/index.html">
+                  <img
+                    src="./assets/images/manga/berseck.jpg"
+                    alt="manga"
+                    class="img"
+                  />
+                </a>
+                <div class="time-update">
+                  <span>6 giờ</span>
+                </div>
+                <div class="chapter">
+                  <p>Chapter 46</p>
+                </div>
+              </div>
+              <p class="manga">Berserk</p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/images/manga/chuthuat.jpg"
+                  alt="manga"
+                  class="img"
+                />
+                <div class="time-update">
+                  <span>6 giờ</span>
+                </div>
+                <div class="chapter">
+                  <p>Chapter 46</p>
+                </div>
+              </div>
+              <p class="manga">Jujutsu no kaisen</p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/images/manga/yaiba.jpg"
+                  alt="manga"
+                  class="img"
+                />
+                <div class="time-update">
+                  <span>6 giờ</span>
+                </div>
+                <div class="chapter">
+                  <p>Chapter 46</p>
+                </div>
+              </div>
+              <p class="manga">Thanh gươm diệt quỷ</p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/images/manga/conan.jpg"
+                  alt="manga"
+                  class="img"
+                />
+                <div class="time-update">
+                  <span>6 giờ</span>
+                </div>
+                <div class="chapter">
+                  <p>Chapter 46</p>
+                </div>
+              </div>
+              <p class="manga">Conan</p>
+            </div>
+          </div>
+          <div class="hot-search-footer">
+            <div class="dot">
+              <i class="icons"><i class="fa-solid fa-circle"></i></i>
+              <i class="icons"><i class="fa-solid fa-circle"></i></i>
+              <i class="icons"><i class="fa-solid fa-circle"></i></i>
+              <i class="icons"><i class="fa-solid fa-circle"></i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="manga-list">
+            <div class="new-manga">
+              <div class="hot-search-title">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Truyện mới cập nhật</span>
+              </div>
+              <div class="manga-category">
+                <a href="#">Truyện Nhật</a>
+                <a href="#">Truyện Trung</a>
+                <a href="#">Truyện Hàn</a>
+              </div>
+              <div class="manga-list-body">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card-last">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/continue.gif"
+                      alt="manga"
+                      class="img"
+                    />
+                  </div>
+                  <div class="continue">
+                    <i class="icons"></i>
+                    <p>Xem thêm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="new-manga">
+              <div class="hot-search-title">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Truyện mới nhất</span>
+              </div>
+              <div class="manga-list-body">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/manga/yaiba.jpg"
+                      alt="manga"
+                      class="img"
+                    />
+                    <div class="time-update">
+                      <span>6 giờ</span>
+                    </div>
+                    <div class="chapter">
+                      <p>Chapter 46</p>
+                    </div>
+                  </div>
+                  <p class="manga">Thanh gươm diệt quỷ</p>
+                </div>
+                <div class="card-last">
+                  <div class="card-img">
+                    <img
+                      src="./assets/images/continue.gif"
+                      alt="manga"
+                      class="img"
+                    />
+                  </div>
+                  <div class="continue">
+                    <i class="icons"></i>
+                    <p>Xem thêm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="discuss">
+            <div class="social">
+              <p>Mạng xã hội</p>
+              <div>
+                <img src="./assets/images/Discord.jpg" alt="" />
+                <img src="./assets/images/Facebook.jpg" alt="" />
+              </div>
+            </div>
+            <div class="history">
+              <div class="title">
+                <i class="icons"
+                  ><i class="fa-solid fa-clock-rotate-left"></i
+                ></i>
+                <p>Lịch sử đọc truyện</p>
+              </div>
+              <div class="manga-history">
+                <div>
+                  <img src="./assets/images/manga/gantz.jpg" alt="" />
+                  <p>Gantz</p>
+                </div>
+                <div>
+                  <img src="./assets/images/manga/gantz.jpg" alt="" />
+                  <p>Gantz</p>
+                </div>
+                <div>
+                  <img src="./assets/images/manga/gantz.jpg" alt="" />
+                  <p>Gantz</p>
+                </div>
+                <div>
+                  <img src="./assets/images/manga/gantz.jpg" alt="" />
+                  <p>Gantz</p>
+                </div>
+              </div>
+              <div class="show-more">
+                <p>Xem tất cả</p>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="title">
+                <i class="icons"><i class="fa-solid fa-comments"></i></i>
+                <p>Bình luận mới nhất</p>
+              </div>
+              <div class="box">
+                <div class="box-top">
+                  <div class="username">
+                    <img src="./assets/images/continue.gif" alt="" />
+                    <span>thaoluong784</span>
+                  </div>
+                  <p>3 Giờ</p>
+                </div>
+                <div class="box-content">
+                  <p>Doạ ma là có thật</p>
+                </div>
+                <div class="box-manga">
+                  <p>TENSEI KENJA NO ISEKAI RAIFU ~ DAINI NO</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-top">
+                  <div class="username">
+                    <img src="./assets/images/continue.gif" alt="" />
+                    <span>thaoluong784</span>
+                  </div>
+                  <p>3 Giờ</p>
+                </div>
+                <div class="box-content">
+                  <p>Doạ ma là có thật</p>
+                </div>
+                <div class="box-manga">
+                  <p>TENSEI KENJA NO ISEKAI RAIFU ~ DAINI NO</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-top">
+                  <div class="username">
+                    <img src="./assets/images/continue.gif" alt="" />
+                    <span>thaoluong784</span>
+                  </div>
+                  <p>3 Giờ</p>
+                </div>
+                <div class="box-content">
+                  <p>Doạ ma là có thật</p>
+                </div>
+                <div class="box-manga">
+                  <p>TENSEI KENJA NO ISEKAI RAIFU ~ DAINI NO</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-top">
+                  <div class="username">
+                    <img src="./assets/images/continue.gif" alt="" />
+                    <span>thaoluong784</span>
+                  </div>
+                  <p>3 Giờ</p>
+                </div>
+                <div class="box-content">
+                  <p>Doạ ma là có thật</p>
+                </div>
+                <div class="box-manga">
+                  <p>TENSEI KENJA NO ISEKAI RAIFU ~ DAINI NO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="license">
+          <p>© 2019 My Manga - Design by NhanMa5213</p>
+        </div>
+        <div class="advertisment">
+          <p>Liên hệ quảng cáo: tagomisugi2@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

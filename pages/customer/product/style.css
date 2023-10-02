@@ -1,0 +1,189 @@
+.describe>.container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    background-color: #DF691A;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+}
+
+.manga-details {
+    width: 66%;
+}
+
+.discuss {
+    width: 34%;
+}
+
+.describe>.container>* {
+    margin-top: 100px;
+}
+
+.manga-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+.manga-details>* {
+    color: white;
+
+    background-color: #343A40;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.information-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.img {
+    max-width: 240px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nextchap {
+    max-width: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nextchap>a {
+    text-decoration: none;
+    background-color: #DF691A;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+}
+
+.series {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.series-name {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.infor-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.infor-item>p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.infor-item>a {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px;
+
+}
+
+.favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.information-bot {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+
+}
+
+.box>:first-child {
+    color: gray;
+}
+
+.box>:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.summary>:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* css chapter */
+.chapters>:first-child {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.chapter-list {
+    padding: 10px;
+}
+
+.chapter-list>.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapter-list>.content>:last-child {
+    color: gray;
+}
+
+.comments .text {
+    padding: 10px;
+    width: 100%;
+    background-color: #43474D;
+    margin-bottom: 15px;
+}
+
+.translator>:first-child {
+    color: gray;
+}
+
+.translator>:last-child {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.same-translator>* {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.same-translator img {
+    width: 60px;
+}
