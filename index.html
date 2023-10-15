@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Session 18: Storing Data in The Browser</h1>
+
+      <fieldset>
+        <legend>Vi du ve Local Storage</legend>
+        <h3>Vi du ve getItem</h3>
+        <button onclick="ex_1()">get Item</button>
+        <button onclick="ex_2()">set Item</button>
+        <button onclick="ex_3()">remove Item</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vi du ve Session Storage</legend>
+        <h3>Vi du ve getItem</h3>
+        <button onclick="ex_4()">get Item</button>
+        <button onclick="ex_5()">set Item</button>
+        <button onclick="ex_6()">remove Item</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vi du ve Cookie</legend>
+        <h3>Vi du ve getItem</h3>
+        <button onclick="ex_7()">set Cookie</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bai tap</legend>
+        <div>
+          <input id="userName" type="text" placeholder="Nhap ten nguoi dung" />
+          <button id="addItem" onclick="addItem()">Them</button>
+          <button onclick="deleteItem()">Xoa</button>
+        </div>
+        <p id="display"></p>
+      </fieldset>
+    </header>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/lab.js"></script>
+  </body>
+</html>
