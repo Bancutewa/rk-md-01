@@ -1,12 +1,16 @@
+const getUsers = () => {
+    let users = localStorage.getItem("users");
+    users = !!users ? JSON.parse(users) : [];
+    return users;
+};
 
-const listStudent = [
-
-];
 
 //
 renderListStudent();
 
 function renderListStudent() {
+    // Lay du lieu tu LocalStorage
+    const listStudent = getUsers();
     // B1: Lấy được element cần thay đổi
     const tbodyElement = document.querySelector("#table-list-student tbody");
     //   forEach là
@@ -56,7 +60,7 @@ function createStudent() {
     }
 
     const item = {
-        ID: new Date().getTime(),
+        ID: item_ID || new Date().getTime(),
         Name: item_name,
         Email: item_email,
         Phone: item_sdt,
@@ -67,17 +71,16 @@ function createStudent() {
 
 
     // Chinh sua edit
-    const index = listStudent.findIndex((c) => c.ID == item.ID)
-    console.log(index);
+    const listStudent = getUsers();
+    const index = listStudent.findIndex((c) => c.ID == item.ID);
 
     if (index >= 0) {
-        listStudent.splice(index, 1, item)
+        listStudent[index] = item;
     } else {
-        listStudent.push(item)
+        listStudent.push(item);
     }
-    console.log(1111, listStudent);
 
-    localStorage.setItem("user", JSON.stringify(listStudent))
+    localStorage.setItem("users", JSON.stringify(listStudent))
     renderListStudent()
 }
 
@@ -91,16 +94,17 @@ function deleteItem(id) {
 }
 
 function editItem(id) {
+    const listStudent = getUsers();
 
-    for (let i = 0; i < listStudent.length; i++) {
-        if (listStudent[i].ID == id) {
-            document.querySelector("#name").value = listStudent[i].Name
-            document.querySelector("#email").value = listStudent[i].Email
-            document.querySelector("#sdt").value = listStudent[i].Phone
-            document.querySelector("#address").value = listStudent[i].Address
-            document.getElementsByName("gender")
-        }
-    }
+    const student = listStudent.find((c) => c.ID === id)
+    document.querySelector("#ID").value = id
+    document.querySelector("#name").value = student.Name
+    document.querySelector("#email").value = student.Email
+    document.querySelector("#sdt").value = student.Phone
+    document.querySelector("#address").value = student.Address
+
+
+
 }
 
 
