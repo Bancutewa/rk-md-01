@@ -9,7 +9,7 @@ const regis = () => {
     passwordVal = passwordEle.value
     cfPasswordVal = cfPasswordEle.value
 
-    product = []
+
 
     const userRegis = {
         email: emailVal,
@@ -31,6 +31,13 @@ const regis = () => {
     }
 
     const users = getUsers();
+    const admin = {
+        email: "admin",
+        user: "admin",
+        password: "admin",
+        repassword: "admin"
+    }
+    users.push(admin)
 
     // Kiem tra email co bi trung trong LocalStorage khong
 

@@ -1,0 +1,255 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #F4F6F9;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    column-gap: 20px;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+
+
+}
+
+.navbar>* {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.accounts img {
+    width: 40px;
+}
+
+aside {
+    height: 100%;
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) !important;
+
+}
+
+aside>:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    overflow-y: hidden;
+    z-index: 1038;
+
+}
+
+aside img {
+    width: 30px;
+}
+
+.nav-sidebar {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 15px;
+}
+
+.nav-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background-color: gray;
+
+}
+
+/* main css */
+main {
+
+    background-image: none;
+}
+
+.profile {
+    position: relative;
+    background-color: white;
+    height: 350px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+
+}
+
+.profile-infor {
+    position: relative;
+}
+
+.background img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.avt {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    color: black;
+}
+
+.avt img {
+    box-shadow: 1px -1px 4px -1px #020202;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-infor>:last-child {
+    background-color: green;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+/* css row */
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    padding: 0;
+    margin-top: 20px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.row-infor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+
+.preview {
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.preview ul {
+    padding: 10px;
+}
+
+.preview>p {
+    background-color: rgb(56, 134, 202);
+    padding: 15px;
+    color: white;
+    align-items: baseline;
+}
+
+.preview li {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+}
+
+.row-form>p {
+    background-color: rgb(56, 134, 202);
+    padding: 15px;
+    color: white;
+}
+
+.row-form {
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.row-form form {
+    display: block;
+    padding: 20px;
+}
+
+
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.row-form button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(56, 134, 202);
+    color: white;
+}
+
+table {
+    background-color: #FFFFFF;
+    color: black;
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 1px solid rgba(128, 128, 128, 0.572);
+
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.572);
+}
+
+tr,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid rgba(128, 128, 128, 0.572);
+    padding: 10px;
+}
+
+td>img {
+    width: 100px;
+}
+
+.upDown {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.upDown button {
+    min-width: 40px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+
+.upDown p {
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    gap: 10px;
+}
+
+.login-form {
+    display: none;
+    background-color: #343A40;
+    padding: 20px;
+}

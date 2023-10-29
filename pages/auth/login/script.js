@@ -11,7 +11,7 @@ const login = () => {
     if (userIndex != -1) {
         // Người dùng tồn tại, kiểm tra mật khẩu
         if (users[userIndex].password == passwordVal) {
-            // Lưu thông tin người dùng vào Local Storage
+            // Lưu thông tin người dùng hiện tại vào Local Storage
             localStorage.setItem("cur_user", JSON.stringify(users[userIndex]));
 
             // Kiểm tra xem có trang trước đó không
