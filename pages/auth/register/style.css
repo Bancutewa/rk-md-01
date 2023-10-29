@@ -31,13 +31,14 @@ a {
 
 
 label {
-    display: block;
+    /* display: block; */
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -54,6 +55,7 @@ button[type="submit"] {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
+    margin-top: 20px;
 }
 
 button[type="submit"]:hover {

@@ -1,0 +1,38 @@
+table {
+    background-color: #FFFFFF;
+    color: black;
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 1px solid rgba(128, 128, 128, 0.572);
+
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.572);
+}
+
+tr,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid rgba(128, 128, 128, 0.572);
+}
+
+td>img {
+    width: 100px;
+}
+
+.upDown {
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.upDown button {
+    min-width: 40px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+
+.upDown p {
+    padding: 10px;
+    border: 1px solid gainsboro;
+}

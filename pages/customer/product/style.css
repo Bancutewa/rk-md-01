@@ -1,0 +1,94 @@
+.descirbe {
+    margin-top: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    column-gap: 20px;
+}
+
+.row {}
+
+.manga-infor {
+    background-color: #343A40;
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+}
+
+.manga-infor-image {
+    width: 300px;
+}
+
+.pre-next {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.manga-infor-details {}
+
+.more-infor {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.more-infor> :first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.more-infor i {
+    display: inline-block;
+
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 3px;
+    background-color: #DF691A;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+.pre-next>* {
+    min-width: 40%;
+    background-color: #DF691A;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+.manga-infor-summary {
+    display: block;
+}
+
+.manga-infor-summary {
+    background-color: #343A40;
+    padding: 15px;
+
+}
+
+.manga-infor-summary>:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.manga-name {
+    margin-bottom: 10px;
+}
+
+.add {
+    min-width: 100;
+    background-color: #DF691A;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+}

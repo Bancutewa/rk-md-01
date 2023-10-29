@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acount</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/common/boostrap/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../../../assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -36,12 +40,14 @@
             <span>Hồ sơ</span>
           </li>
           <li class="nav-item">
-            <i class="icons"><i class="fa-solid fa-comment-dots"></i></i>
-            <span>Tin nhắn</span>
+            <a href="../favorite/index.html">
+              <i class="icons"><i class="fa-solid fa-comment-dots"></i></i>
+              <span>Kệ sách yêu thích</span>
+            </a>
           </li>
           <li class="nav-item">
             <i class="icons"><i class="fa-solid fa-book-open"></i></i>
-            <span>Kệ sách yêu thích</span>
+            <span>Tin nhắn</span>
           </li>
           <li class="nav-item">
             <i class="icons"><i class="fa-solid fa-bell"></i></i>
@@ -60,7 +66,7 @@
           <li><i class="fa-solid fa-book"></i></li>
           <li>Đọc Truyện</li>
         </ul>
-        <ul class="accounts">
+        <ul class="customer">
           <li>tranngoctien10304</li>
           <li><img src="../../../assets/images/continue.gif" alt="" /></li>
         </ul>
@@ -152,6 +158,12 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <script src="../../../assets/common/boostrap/js/bootstrap.bundle.js"></script>
+    <script src="../../../assets/js/common.js"></script>
+    <script src="../../../assets/js/includeHTML.js"></script>
+    <script>
+      includeHTML();
+      renderPage();
+    </script>
   </body>
 </html>

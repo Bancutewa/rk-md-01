@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/common/boostrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,14 +18,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="shortcut icon"
       href="./assets/images/logo/icon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Truyện Tranh LH</title>
   </head>
   <body>
+    <!-- Include Header  -->
+    <!-- <div product-include-html="./assets/common/header/header.html"></div> -->
     <header>
       <nav class="navbar">
         <div class="container">
@@ -48,25 +59,52 @@
                 <input type="text" placeholder="Tìm kiếm" />
               </li>
 
-              <a href="./pages/auth/login/index.html"
-                ><li class="login">
-                  <i class="icons"
-                    ><i class="fa-solid fa-right-to-bracket"></i
-                  ></i>
-                  <span>login</span>
-                </li></a
-              >
-              <a href="./pages/auth/login/index.html">
-                <li class="register">
-                  <i class="icons"><i class="fa-solid fa-registered"></i></i>
-                  <span>register</span>
-                </li></a
-              >
+              <li>
+                <ul class="customer">
+                  <li class="login" onclick="pageLogin()">
+                    <i class="icons"
+                      ><i class="fa-solid fa-right-to-bracket"></i
+                    ></i>
+                    <span>login</span>
+                  </li>
+
+                  <li class="register" onclick="pageRegister()">
+                    <i class="icons"><i class="fa-solid fa-registered"></i></i>
+                    <span>register</span>
+                  </li>
+
+                  <!-- <li class="current-user-name">
+                    <p>tien10304</p>
+                  </li>
+                  <li class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Thong tin ca nhan
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" onclick="logOut()">Dang Xuat</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
       <div class="hot-search">
         <div class="container">
@@ -74,97 +112,295 @@
             <i class="icons fa-solid fa-fire"></i>
             <span>Truyện hot trong ngày</span>
           </div>
-          <div class="hot-search-body">
-            <div class="card">
-              <div class="card-img">
-                <img
-                  src="./assets/images/manga/gantz.jpg"
-                  alt="manga"
-                  class="img"
-                />
-                <div class="time-update">
-                  <span>6 giờ</span>
-                </div>
-                <div class="chapter">
-                  <p>Chapter 46</p>
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="hot-search-body">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/gantz.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Gantz</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="./pages/customer/product/index.html">
+                        <img
+                          src="./assets/images/manga/berseck.jpg"
+                          alt="manga"
+                          class="img"
+                        />
+                      </a>
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Berserk</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/chuthuat.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Jujutsu no kaisen</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/yaiba.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Thanh gươm diệt quỷ</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/conan.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Conan</p>
+                  </div>
                 </div>
               </div>
-              <p class="manga">Gantz</p>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <a href="./pages/customer/product/index.html">
-                  <img
-                    src="./assets/images/manga/berseck.jpg"
-                    alt="manga"
-                    class="img"
-                  />
-                </a>
-                <div class="time-update">
-                  <span>6 giờ</span>
-                </div>
-                <div class="chapter">
-                  <p>Chapter 46</p>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="hot-search-body">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/gantz.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Gantz</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="./pages/customer/product/index.html">
+                        <img
+                          src="./assets/images/manga/berseck.jpg"
+                          alt="manga"
+                          class="img"
+                        />
+                      </a>
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Berserk</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/chuthuat.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Jujutsu no kaisen</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/yaiba.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Thanh gươm diệt quỷ</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/conan.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Conan</p>
+                  </div>
                 </div>
               </div>
-              <p class="manga">Berserk</p>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img
-                  src="./assets/images/manga/chuthuat.jpg"
-                  alt="manga"
-                  class="img"
-                />
-                <div class="time-update">
-                  <span>6 giờ</span>
-                </div>
-                <div class="chapter">
-                  <p>Chapter 46</p>
+              <div class="carousel-item">
+                <div class="hot-search-body">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/gantz.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Gantz</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="./pages/customer/product/index.html">
+                        <img
+                          src="./assets/images/manga/berseck.jpg"
+                          alt="manga"
+                          class="img"
+                        />
+                      </a>
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Berserk</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/chuthuat.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Jujutsu no kaisen</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/yaiba.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Thanh gươm diệt quỷ</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/images/manga/conan.jpg"
+                        alt="manga"
+                        class="img"
+                      />
+                      <div class="time-update">
+                        <span>6 giờ</span>
+                      </div>
+                      <div class="chapter">
+                        <p>Chapter 46</p>
+                      </div>
+                    </div>
+                    <p class="manga">Conan</p>
+                  </div>
                 </div>
               </div>
-              <p class="manga">Jujutsu no kaisen</p>
             </div>
-            <div class="card">
-              <div class="card-img">
-                <img
-                  src="./assets/images/manga/yaiba.jpg"
-                  alt="manga"
-                  class="img"
-                />
-                <div class="time-update">
-                  <span>6 giờ</span>
-                </div>
-                <div class="chapter">
-                  <p>Chapter 46</p>
-                </div>
-              </div>
-              <p class="manga">Thanh gươm diệt quỷ</p>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img
-                  src="./assets/images/manga/conan.jpg"
-                  alt="manga"
-                  class="img"
-                />
-                <div class="time-update">
-                  <span>6 giờ</span>
-                </div>
-                <div class="chapter">
-                  <p>Chapter 46</p>
-                </div>
-              </div>
-              <p class="manga">Conan</p>
-            </div>
-          </div>
-          <div class="hot-search-footer">
-            <div class="dot">
-              <i class="icons"><i class="fa-solid fa-circle"></i></i>
-              <i class="icons"><i class="fa-solid fa-circle"></i></i>
-              <i class="icons"><i class="fa-solid fa-circle"></i></i>
-              <i class="icons"><i class="fa-solid fa-circle"></i></i>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -182,13 +418,17 @@
                 <a href="#">Truyện Hàn</a>
               </div>
               <div class="manga-list-body">
+                <!-- Sẽ được input sau khi JS -->
                 <div class="card">
+                  <a href="./pages/customer/product/index.html"></a>
                   <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
+                    <a href="./pages/customer/product/index.html">
+                      <img
+                        src="https://st.nettruyenus.com/data/comics/235/thanh-guom-diet-quy.jpg"
+                        alt="${product.name}"
+                        class="img"
+                      />
+                    </a>
                     <div class="time-update">
                       <span>6 giờ</span>
                     </div>
@@ -196,233 +436,10 @@
                       <p>Chapter 46</p>
                     </div>
                   </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
-                </div>
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/manga/yaiba.jpg"
-                      alt="manga"
-                      class="img"
-                    />
-                    <div class="time-update">
-                      <span>6 giờ</span>
-                    </div>
-                    <div class="chapter">
-                      <p>Chapter 46</p>
-                    </div>
-                  </div>
-                  <p class="manga">Thanh gươm diệt quỷ</p>
+                  <p class="manga">${product.name}</p>
                 </div>
                 <div class="card-last">
+                  <!-- Cho em hỏi làm sao để input card cuối -->
                   <div class="card-img">
                     <img
                       src="./assets/images/continue.gif"
@@ -443,7 +460,7 @@
                 <span>Truyện mới nhất</span>
               </div>
               <div class="manga-list-body">
-                <div class="card">
+                <div onclick="showDetails()" class="card">
                   <div class="card-img">
                     <img
                       src="./assets/images/manga/yaiba.jpg"
@@ -688,5 +705,14 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/common/boostrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/includeHTML.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./pages/auth/login/script.js"></script>
+    <script>
+      includeHTML();
+      renderPage();
+      renderList();
+    </script>
   </body>
 </html>
